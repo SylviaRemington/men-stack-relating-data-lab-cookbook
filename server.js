@@ -1,4 +1,4 @@
-// men-stack-relating-data-lab-cookbook
+// MEN STACK Relating Data Cookbook Lab
 // Initial code
 
 const dotenv = require('dotenv');
