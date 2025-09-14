@@ -413,4 +413,9 @@ The lab requires building a Cookbook app where users can manage pantry items emb
 - Create Users Views: Add index.ejs and show.ejs in a new views/users folder.
 - Test the App: Make sure all routes work.
 
+Also:
+Choosing path to be:
+Path 1: Exercise: MEN Stack Embedding Related Data - since this is simpler.
+
+MEN Stack Embedding Related Data is the most basic and easiest to build out for this lab. Embedding keeps related data (like recipes and pantry items) within a single document, simplifying CRUD operations and queries. This approach reduces complexity for beginners (such as myself) by avoiding multiple collections and reference management, making the code more straightforward to implement and debug. Yay and yuuus!
 _______________________________________________________________________________
