@@ -394,3 +394,23 @@ This list should be read-only.
 Test your new community page.
 
 ### Congrats! You have reached MVP! 🎉
+
+_______________________________________________________________________________
+
+## What I Need to Do to Complete the Lab
+
+The lab requires building a Cookbook app where users can manage pantry items embedded in their User model, perform CRUD operations, and view other users' pantries. What I currently have created thus far is as follows: server.js, user.js, auth.js, and views (index.ejs, auth/sign-in.ejs, auth/sign-up.ejs). I'm now needing to add the remaining files and code to meet all user stories.
+
+### Steps to Complete
+
+- Update the User Model: Add the foodSchema and embed it in userSchema in models/user.js.
+- Create Middleware: Add is-signed-in.js and pass-user-to-view.js in a new middleware folder.
+- Update server.js: Include middleware and the foods controller.
+- Create the Foods Controller: Build controllers/foods.js with full CRUD routes for pantry items.
+- Create a Navbar Partial: Add _navbar.ejs in a new views/partials folder and update existing views.
+- Create Foods Views: Add index.ejs, new.ejs, and edit.ejs in a new views/foods folder for pantry management.
+- Create Users Controller: Build controllers/users.js for community and user pantry views.
+- Create Users Views: Add index.ejs and show.ejs in a new views/users folder.
+- Test the App: Make sure all routes work.
+
+_______________________________________________________________________________
