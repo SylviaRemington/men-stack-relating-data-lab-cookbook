@@ -417,5 +417,5 @@ Also:
 Choosing path to be:
 Path 1: Exercise: MEN Stack Embedding Related Data - since this is simpler.
 
-MEN Stack Embedding Related Data is the most basic and easiest to build out for this lab. Embedding keeps related data (like recipes and pantry items) within a single document, simplifying CRUD operations and queries. This approach reduces complexity for beginners (such as myself) by avoiding multiple collections and reference management, making the code more straightforward to implement and debug. Yay and yuuus!
+MEN Stack Embedding Related Data is the most basic and easiest to build out for this lab. Embedding keeps related data (like recipes and pantry items) within a single document, simplifying CRUD operations and queries. This approach reduces complexity for beginners (such as myself) by avoiding multiple collections and reference management, making the code more straightforward to implement and debug. 
 _______________________________________________________________________________
