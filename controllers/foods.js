@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 
 // new item form page
 router.get('/new', (req, res) => {
-  res.render('foods/new.ejs');
+  res.render('foods/new.ejs', { userId: req.session.user._id });
 });
 
 // create item
@@ -42,7 +42,10 @@ router.get('/:itemId/edit', async (req, res) => {
   try {
     const user = await User.findById(req.session.user._id);
     const food = user.pantry.id(req.params.itemId);
-    res.render('foods/edit.ejs', { food });
+    res.render('foods/edit.ejs', { 
+        food,
+        userId: req.session.user._id  // Pass userId
+     });
   } catch (error) {
     console.log(error);
     res.redirect('/');
