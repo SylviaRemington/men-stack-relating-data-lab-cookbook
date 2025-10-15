@@ -4,11 +4,14 @@ const User = require('../models/user.js');
 
 // Router logic below:
 
-
+// This is the index. - It shows all pantry items for the logged-in user.
 router.get('/', async (req, res) => {
   try {
-    const user = await User.findBy.findById(req.session.user._id);
-    res.render('foods/index.ejs', { pantry: user.pantry });
+    const user = await User.findById(req.session.user._id);
+    res.render('foods/index.ejs', { 
+        pantry: user.pantry,
+        userId: req.session.user._id 
+     });
   } catch (error) {
     console.log(error);
     res.redirect('/');
