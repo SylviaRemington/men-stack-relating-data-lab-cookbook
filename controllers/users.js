@@ -1,7 +1,6 @@
 // controllers/users.js
 // ADDING A COMMUNITY PAGE
 
-
 const express = require('express');
 const router = express.Router();
 const User = require('../models/user.js');
@@ -29,4 +28,5 @@ router.get('/:userId', async (req, res) => {
 });
 
 module.exports = router;
+
 

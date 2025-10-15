@@ -9,14 +9,16 @@ const methodOverride = require('method-override');
 const morgan = require('morgan');
 const session = require('express-session');
 
+// Global Middleware
+// importing and including both middleware functions from lab verbiage above all of the routes and controllers in server.js.
+// These middleware functions should run before any routes that check for a valid user or require a user to be signed in to view a page.
+const isSignedIn = require('./middleware/is-signed-in.js');
+const passUserToView = require('./middleware/pass-user-to-view.js');
+
 // Controllers
 const authController = require('./controllers/auth.js');
 const foodsController = require('./controllers/foods.js');
 const usersController = require('./controllers/users.js');
-
-// Global Middleware
-const isSignedIn = require('./middleware/is-signed-in.js');
-const passUserToView = require('./middleware/pass-user-to-view.js');
 
 // PORT setup and using http://localhost:3000/
 const port = process.env.PORT ? process.env.PORT : '3000';

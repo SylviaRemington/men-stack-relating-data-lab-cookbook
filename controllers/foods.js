@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router({ mergeParams: true }); // keeps :userId params
+
 const User = require('../models/user.js');
 
 // Router logic below:
 
-// This is the index. - It shows all pantry items for the logged-in user.
+// index route - It shows all pantry items for the logged-in user.
 router.get('/', async (req, res) => {
   try {
     const user = await User.findById(req.session.user._id);
@@ -18,12 +19,12 @@ router.get('/', async (req, res) => {
   }
 });
 
-// new item form page
+// new route - new item form page
 router.get('/new', (req, res) => {
   res.render('foods/new.ejs', { userId: req.session.user._id });
 });
 
-// create item
+// create item route - create functionality
 router.post('/', async (req, res) => {
   try {
     const user = await User.findById(req.session.user._id);
@@ -52,7 +53,7 @@ router.get('/:itemId/edit', async (req, res) => {
   }
 });
 
-// update item - This will save the changes made on the edit form.
+// update route - update item - This will save the changes made on the edit form.
 router.put('/:itemId', async (req, res) => {
   try {
     const user = await User.findById(req.session.user._id);
@@ -66,7 +67,7 @@ router.put('/:itemId', async (req, res) => {
   }
 });
 
-// delete item
+// delete route - delete item
 router.delete('/:itemId', async (req, res) => {
   try {
     const user = await User.findById(req.session.user._id);
