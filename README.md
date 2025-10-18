@@ -1,4 +1,4 @@
-## EXERCISE/LAB INFORMATION HERE:
+## Exercise/Lab Information is as follows:
 
 ### MVP portion of assignment
 
@@ -397,7 +397,7 @@ Test your new community page.
 
 _______________________________________________________________________________
 
-## What I Need to Do to Complete the Lab
+## What I Need to Do to Complete the Lab -- Completed! :)
 
 The lab requires building a Cookbook app where users can manage pantry items embedded in their User model, perform CRUD operations, and view other users' pantries. What I currently have created thus far is as follows: server.js, user.js, auth.js, and views (index.ejs, auth/sign-in.ejs, auth/sign-up.ejs). I'm now needing to add the remaining files and code to meet all user stories.
 
